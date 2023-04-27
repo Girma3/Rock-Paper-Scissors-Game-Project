@@ -1,1 +1,1 @@
-# Rock-Paper-Scissors-Game-Project
+Rock-Paper-Scissors-Game-Project- for this project I use javascript and html and it computer vs player game.
