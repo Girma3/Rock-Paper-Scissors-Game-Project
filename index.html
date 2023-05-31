@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="utf-8">
-       <title>Rock, Paper or scissors game</title>
-       <script src="" defer ></script>
-       <link rel="stylesheet" href="rps.css">
-    </head>
-    <body>
-       <div class="gamecontainer">
 
-            <div class="scoreboard">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper or scissors game</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="rps.css">
+</head>
 
-                <div class="logo">
-                    <img src="images/rps.jpg" alt="rock,paper scissors" >
-                </div>
+<body>
+    <div class="gamecontainer">
 
-                <div class="userscore">
-                    <div class="text">YOUR SCORE</div>
-                    <h1>0</h1>
-                </div>
+        <div class="scoreboard">
 
-                <div class="computerscore">
-                    <div class="text">COMPUTER SCORE</div>
-                    <h1>0</h1>
-                </div>
-
+            <div class="logo">
+                <img src="images/rps.jpg" alt="rock,paper scissors">
             </div>
-            
-            <div class="choicebuttons">
 
-                <div class="buttons">
-                    <button id="btnr">
-                    <img src="images/rock.jpg" alt="rock" >
-                    <div class="btntext">Rock</div>
-                    </button>
-                </div>
+            <div class="userscore">
+                <div class="text">YOUR SCORE</div>
+                <h1>0</h1>
+            </div>
 
-                <div class="buttons">
-                    <button id="btnp">
-                    <img src="images/paper.jpg" alt="paper" >
-                   <div class="btntext">Paper</div>
-                    </button>
-                </div>
+            <div class="computerscore">
+                <div class="text">COMPUTER SCORE</div>
+                <h1>0</h1>
+            </div>
 
-                <div class="buttons">
-                    <button id="btns">
+        </div>
+
+        <div class="choicebuttons">
+
+            <div class="buttons">
+                <button id="btnr" onclick="userPicks('Rock')">
+                    <img src="images/rock.jpg" alt="rock">
+                    <span class="btntext">Rock</span>
+                </button>
+            </div>
+
+            <div class="buttons">
+                <button id="btnp" onclick="userPicks('Paper')">
+                    <img src="images/paper.jpg" alt="paper">
+                    <span class="btntext">Paper</span>
+                </button>
+            </div>
+
+            <div class="buttons">
+                <button id="btns" onclick="userPicks('Scissors')">
                     <img src="images/scissors.jpg" alt="scissors">
-                    <div class="btntext">Scissors</div>
-                    </button>
-                </div>
-
+                    <span class="btntext">Scissors</span>
+                </button>
             </div>
 
+        </div>
+
+        <div class="showresults">
+
+            <div class="playerpick">
+                <h1>You Picked</h1>
+                <img id="userpicksimg" class="resultimg" src="images/rock.jpg" alt="you pick">
+            </div>
+
+            <div class="result">
+                <h1>You win</h1>
+            </div>
+
+            <div class="computerpick">
+                <h1>Computer picks</h1>
+                <img id = "computerpickimg" class="resultimg" src="images/paper.jpg" alt="computer pick" >
+            </div>
+        </div>
 
 
+    </div>
 
+</body>
 
-
-
-
-
-
-       </div>
-        
-    </body>
 </html>
