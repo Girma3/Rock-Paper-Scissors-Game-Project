@@ -1,1 +1,1 @@
-Rock-Paper-Scissors-Game-Project- for this project I use javascript and html and it computer vs player game.
+Rock-Paper-Scissors-Game-Project- for this project I use Html,css and javascript. It is computer vs player game and I pick the images from www.freepik.com
