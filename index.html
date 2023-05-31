@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper or scissors game</title>
-    <script src="main.js" defer></script>
+    <script src="main.js" defer >window.onload=intro()</script>
     <link rel="stylesheet" href="rps.css">
 </head>
 
 <body>
+    
     <div class="gamecontainer">
-
+    <span id="intro">5 rounds rock,paper or scissors game</span>
         <div class="scoreboard">
 
             <div class="logo">
@@ -20,12 +21,12 @@
 
             <div class="userscore">
                 <div class="text">YOUR SCORE</div>
-                <h1>0</h1>
+                <h1 id="playerscore">0</h1>
             </div>
 
             <div class="computerscore">
                 <div class="text">COMPUTER SCORE</div>
-                <h1>0</h1>
+                <h1 id="computerscore">0</h1>
             </div>
 
         </div>
@@ -58,16 +59,17 @@
         <div class="showresults">
 
             <div class="playerpick">
-                <h1>You Picked</h1>
+                <h1 id="playerchoose">You Picked</h1>
                 <img id="userpicksimg" class="resultimg" src="images/rock.jpg" alt="you pick">
             </div>
 
             <div class="result">
-                <h1>You win</h1>
+                <h1 id="currentresult">You win</h1>
+                <button id="restartbtn" onclick="playAgain()">play Again</button>
             </div>
 
             <div class="computerpick">
-                <h1>Computer picks</h1>
+                <h1 id="compchoose">Computer picks</h1>
                 <img id = "computerpickimg" class="resultimg" src="images/paper.jpg" alt="computer pick" >
             </div>
         </div>
