@@ -71,10 +71,8 @@ button img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
-   
- }
+    align-items: center;
+}
 
 
 
@@ -118,12 +116,11 @@ button img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-   
     margin: 50px;
     padding: 10px;
     
 }
+
 #restartbtn{
     padding:  10px;
    border-radius: 8px;
@@ -138,5 +135,8 @@ button img{
     align-items: center;
 }
 #intro{
+    font-family: Blippo, fantasy;
+    border: dashed 2px black;
+    padding: 10px;
     color: blanchedalmond;
 }
